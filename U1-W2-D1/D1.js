@@ -17,6 +17,8 @@ REGOLE
   string = serve per scrivere una stringa di parole
    number = serve per scrivere solamente numeri e sono compresi anche i numeri con la virgola che scrive col . (punto)
    boolean = questo ha solamente 2 valori true or false
+   Null = questo è un datatype di tipo vuoto (intezionalmente vuoto)
+   undefined = mentre questo non è intenzionale ed è vuoto
 */
 
 /* ESERCIZIO 2
@@ -25,7 +27,7 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let name = "Kavidu Francesco";
+const name = "Kavidu Francesco";
 
 console.log(name);
 
@@ -34,8 +36,9 @@ console.log(name);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-let somma = (12 + 20) ;
+let num1 = 12;
+let num2 = 20;
+let somma = (num1 + num2) ;
 
 console.log(somma);
 
@@ -56,11 +59,12 @@ console.log(x);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-{
-const name = "warnakulasuriya";
-//name = "francesco";
-console.log(name);
-}
+
+ /*name = "warnakulasuriya"; 
+ Uncaught TypeError: Assignment to constant variable.*/
+
+ console.log(name);
+ 
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
@@ -68,7 +72,7 @@ console.log(name);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let y = (4-x)
+let y = (x-4);
 
 console.log(y);
 
